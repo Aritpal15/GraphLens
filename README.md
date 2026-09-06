@@ -191,69 +191,78 @@ Gemini then synthesizes the final answer from the retrieved evidence.
 - Docker Compose
 - Nginx
 
-### 📂 Project Structure
+## 📁 Project Structure
 
-    ```text
     graphlens/
     ├── app/
     │   ├── api/
     │   │   ├── routes.py
     │   │   └── schemas.py
+    │   │
     │   ├── config/
     │   │   └── settings.py
+    │   │
     │   ├── evidence/
     │   │   ├── assembler.py
     │   │   └── schemas.py
+    │   │
     │   ├── graph/
     │   │   ├── batch_pipeline.py
-    │   │   ├── extractor.py
     │   │   ├── knowledge_graph.py
     │   │   ├── schemas.py
     │   │   └── traversal.py
+    │   │
     │   ├── ingestion/
     │   │   ├── chunker.py
     │   │   ├── extractor.py
     │   │   ├── pipeline.py
     │   │   └── schemas.py
+    │   │
     │   ├── rerank/
     │   │   └── cross_encoder.py
+    │   │
     │   ├── retrieval/
     │   │   ├── bm25_index.py
     │   │   ├── faiss_index.py
-    │   │   ├── hybrid_rrf.py
-    │   │   └── pipeline.py
+    │   │   └── hybrid_rrf.py
+    │   │
     │   ├── synthesis/
     │   │   ├── prompts.py
     │   │   └── synthesizer.py
+    │   │
     │   ├── cli.py
     │   ├── main.py
     │   └── pipeline.py
+    │
     ├── assets/
-    │   ├── agent-pipeline-model.png
-    │   ├── docker-deployment.png
-    │   ├── evidence-provenance.png
     │   ├── graphlens-overview.png
-    │   └── subgraph-reasoning.png
+    │   ├── subgraph-reasoning-canvas.png
+    │   ├── evidence-provenance-cards.png
+    │   ├── agent-pipeline-metrics.png
+    │   └── docker-deployment.png
+    │
     ├── backend/
     │   ├── .dockerignore
     │   └── Dockerfile
+    │
     ├── data/
     │   ├── cache/
     │   ├── indices/
     │   ├── raw_pdfs/
     │   ├── sample/
     │   └── knowledge_graph.json
+    │
     ├── frontend/
     │   ├── public/
-    │   ├── src/
-    │   │   ├── assets/
-    │   │   ├── components/
-    │   │   ├── api.ts
-    │   │   ├── App.css
-    │   │   ├── App.tsx
-    │   │   ├── index.css
-    │   │   ├── main.tsx
-    │   │   └── types.ts
+    │   └── src/
+    │       ├── assets/
+    │       ├── components/
+    │       ├── api.ts
+    │       ├── App.css
+    │       ├── App.tsx
+    │       ├── index.css
+    │       ├── main.tsx
+    │       └── types.ts
     │   ├── .dockerignore
     │   ├── Dockerfile
     │   ├── eslint.config.js
@@ -265,6 +274,7 @@ Gemini then synthesizes the final answer from the retrieved evidence.
     │   ├── tsconfig.json
     │   ├── tsconfig.node.json
     │   └── vite.config.ts
+    │
     ├── tests/
     │   └── unit/
     │       ├── test_api.py
@@ -275,6 +285,7 @@ Gemini then synthesizes the final answer from the retrieved evidence.
     │       ├── test_retrieval.py
     │       ├── test_synthesis.py
     │       └── test_traversal.py
+    │
     ├── .dockerignore
     ├── .env.example
     ├── .gitignore
@@ -282,7 +293,6 @@ Gemini then synthesizes the final answer from the retrieved evidence.
     ├── pyproject.toml
     ├── README.md
     └── requirements.txt
-    ```
 
 ## Quick Start
 
