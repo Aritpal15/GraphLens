@@ -21,7 +21,7 @@ Instead of relying only on semantic similarity, GraphLens:
 - Builds a controlled **NetworkX knowledge graph**
 - Performs bounded **multi-hop graph traversal**
 - Assembles evidence with document and page provenance
-- Uses **Gemini** to synthesize the final grounded answer
+- Uses **Gemini** to synthesize the final grounded answers
 
 ### Retrieval Pipeline
 
